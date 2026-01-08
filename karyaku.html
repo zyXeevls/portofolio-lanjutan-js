@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">Gelaran Tampilan Karya</div>
+        <nav class="nav-links">
+            <a href="index.html">Beranda</a>
+            <a href="karyaku.html">Galeri</a>
+            <a href="hubungiku.html">Kontak</a>
+        </nav>
+    </header>
+    <section class="gallery-page container reveal">
+        <h1>Galeri Foto &amp; Video</h1>
+        <p class="section-desc">
+            Halaman ini menampilkan dokumentasi karya dalam bentuk foto dan video,
+            termasuk
+            mockup, tampilan digital, dan presentasi singkat.
+        </p>
+        <h2 class="subheading">Galeri Foto</h2>
+        <div class="media-grid">
+            <figure class="media-card">
+                <img src="https://unsplash.it/600/400?image=1" alt="Mockup logo pada kemasan kopi">
+                <figcaption>Mockup logo pada kemasan kopi</figcaption>
+            </figure>
+            <figure class="media-card">
+                <img src="https://unsplash.it/600/400?image=2" alt="Tampilan UI pada layar ponsel">
+                <figcaption>UI aplikasi ditampilkan pada layar ponsel</figcaption>
+            </figure>
+            <figure class="media-card">
+                <img src="https://unsplash.it/600/400?image=3" alt="Poster konser tercetak dan dipajang">
+                <figcaption>Poster konser dicetak dan dipajang di dinding</figcaption>
+            </figure>
+        </div>
+        <h2 class="subheading">Galeri Video</h2>
+        <div class="carousel carousel--video" id="gallery-video-carousel">
+            <button class="carousel-btn prev" aria-label="Video sebelumnya">&#10094;</button>
+            <div class="carousel-track">
+                <div class="carousel-item active">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Presentasi singkat portofolio"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="carousel-caption">
+                        <h3>Video Presentasi Portofolio</h3>
+                        <p>Presentasi singkat yang merangkum beberapa karya utama.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/o-YBDTqX_ZU" title="Proses pembuatan desain"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="carousel-caption">
+                        <h3>Proses Pembuatan Desain</h3>
+                        <p>Cuplikan proses kerja dari sketsa hingga desain final.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn next" aria-label="Video berikutnya">&#10095;</button>
+            <div class="carousel-dots">
+                <button class="dot active" data-slide="0" aria-label="Video 1"></button>
+                <button class="dot" data-slide="1" aria-label="Video 2"></button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer container">
+        <small>© 2025 Nama Murid DKV. Portofolio untuk keperluan pembelajaran.</small>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
